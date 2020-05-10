@@ -1,0 +1,35 @@
+var width = 1200;
+var height = 700;
+var svg = d3.select("#svgcontainer5")
+    .append('svg')
+    .attr("width", width)
+    .attr("height", height);
+//svg.append("line")
+//    .attr("x1", 100)
+//    .attr("y1", 100)
+//    .attr("x2", 200)
+//    .attr("y2", 200)
+//    .style("stroke", "rgb(255,0,0)")
+//    .style("stroke-width", 2);
+svg.append("rect")
+    .attr("id", "r16363")
+    .attr("x", 190)
+    .attr("y", 42)
+    .attr("rx", 10)
+    .attr("ry", 10)
+    .attr("opacity","0.2")
+    .attr("width",  "63%")
+    .attr("height", "93%")
+    .attr("fill", "blue");
+//d3.select('svg')
+svg.append("text")
+    .attr("x", "35")
+    .attr("y", "50")
+    //.attr("dy", ".35em")
+    .attr("font-family", "sans-serif")
+    //.attr("text-anchor","middle")
+    .style("font-weight","bold")
+    //.style("text-anchor","end")    
+    .style("font-size","40px")
+    .style("fill", "blue")
+    .text("NTC-16363 - Certificación y Auditoría");
