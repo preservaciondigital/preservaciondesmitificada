@@ -1,7 +1,8 @@
 # DESMITIFICACION DE LA PRESERVACIÓN DIGITAL PARA ARCHIVISTAS !
 
-Acercamiento 
+Presentación que intenta ofrecer un acercamiento general a lo relacionado con la preservación digital.
 
+Aquí se desarrolla la definición y el uso de la preservación digital desde el significado patrimonial.
 
 ## License
 MIT licensed
