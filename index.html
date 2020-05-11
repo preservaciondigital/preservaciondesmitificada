@@ -18,35 +18,20 @@
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="plugin/diagram/revealjs-diagram.css">
 
-		
-		<!-- Tema estandar -->
-		<!-- <link rel="stylesheet" href="css/theme/beige.css" id="theme"> -->
-		<!-- Temas modificados -->
-		<!-- <link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/nv.d3.css" type="text/css">
-		<link rel="stylesheet" href="css/main.css" type="text/css">
-		<link rel="stylesheet" href="css/reveal-console.css" type="text/css" media="screen,projection">
-		<link rel="stylesheet" href="css/viz.css" type="text/css" media="screen,projection">
-		<link rel="stylesheet" href="css/math.css" type="text/css" media="screen,projection">
-		-->
-
 		<!-- Mejores temas -->
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="css/nv.d3.css" type="text/css">
 		<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
 		<link rel="stylesheet" href="css/viz.css" type="text/css" media="screen,projection">
 		<!-- <link rel="stylesheet" href="css/reveal.min.css"> -->
-		<link rel="stylesheet" href="css/theme/serif.css" id="theme">
+		<!-- <link rel="stylesheet" href="css/theme/serif.css" id="theme"> -->
+		<link rel="stylesheet" href="css/theme/beige.css" id="theme">
 		<!-- <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'> -->
 		<!-- <link rel="stylesheet" href="css/zenburn.css" type="text/css"> -->
-
 		<!-- <link rel="stylesheet" href="css/styles/highlight.css"> -->
-
 		<!-- simple, sky, solarized, white, league, beige, black, blood, moon, night, serif, simple, -->
-
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
-
 		<!-- Printing and PDF exports -->
 		<script>
 			var link = document.createElement( 'link' );
@@ -54,12 +39,9 @@
 			link.type = 'text/css';
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-
-		
+		</script>		
 		<!-- For syntax highlighting, tomorrow-night-bright pojoaque sunburst-->
 		<!-- <link rel="stylesheet" href="lib/css/pojoaque.css"> -->
-
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
@@ -92,139 +74,167 @@
 						<div class="half-size"><a class="qrcode-link"></a><br/></div>
 					</div>					
 					<aside class="notes">
-						- Antes de dar inicio a la presentación, y 
-						  Para el publico que nos acompaña así como para aquellos interesados, se ha dispuesto de un acceso en linea al contenido de la 
-						  presentación que pueden leer desde sus móbiles haciendo lectura del siguiente código QR o accediendo al enlace mostrado
-						  en la primera diapositiva o slide, con el fin de evitar el desgaste producido por la toma de fotografías.
+						- Antes de dar inicio a la presentación, y para el público que nos acompaña hoy
+						  se ha dispuesto de esta presentación en linea desde donde accederán al contenido de la 
+						  presentación que pueden leer desde sus móbiles haciendo lectura del siguiente código QR 
+						  o accediendo al enlace mostrado en la primera diapositiva o slide, con el fin de evitar 
+						  el desgaste producido por la toma de fotografías.
 					</aside>
 				</section>
 
 				<section>
 					<h2>
-							<span class="stretch"><font color="black"> Gracias a: <br> </font></span>
+							<span class="stretch"><font color="black">Gracias a: <br> </font></span>
 					</h2>
 					<p>
-						<img class="stretch" width="300px" height="350px" src="logos/sca-02.png" alt="SCA" style="background:none; border:none; box-shadow:none; position:absolute;top:300px;left:300px;" >
+						<img class="stretch" width="400px" height="450px" src="logos/sca-02.png" alt="SCA" style="background:none; border:none; box-shadow:none; position:absolute;top:300px;left:500px;" >
 						<!-- <img class="stretch" width="300px" height="150px" src="logos/archivo-general.png" alt="AGN" style="background:none; border:none; box-shadow:none; position:absolute;top:370px;left:800px;" > -->
 						<!-- <div style="position:absolute; bottom:10px; right:500px; border:0;"><a href="http://www.mincultura.gov.co/"><img src="logos/mincultura.png" width="200"></a></div> -->
 						<!-- <span class="fragment" <font color="black">Convenio Icontec - Archivo General de la Nación para el establecimiento de la secretaría técnica de Normalizacion en el campo de la Archivística y la Gestión Documental, firmado en el 25 de mayo de 1994</font> </span> -->
 					</p>		
 
 					<aside class="notes">
-						- Quiero agradecer la presencia del público que hoy nos acompaña, al comité técnico de preservación digital
-						  y a las instituciones que hacen posible esta socialización de normas, al ICONTEC y al AGN que con sus recursos
-						  hacen que los contenidos de estas importantes normas lleguen a los diferentes sectores de la sociedad, el 
-						   gobierno, la academia y la industria.  
-						Estos resultados son producto del convenio existente entre el agn y el icontec 
-						- La presentación de la presente norma es posible gracias al ICONTEC, al AGN y 
-						  al comité técnico de preservación.
+						- Quiero agradecer la presencia del público que hoy nos acompaña, a la sociedad colombiana de archivistas y a todos
+						  los participantes por su interés en este tema de la preservación digital.
 					</aside>
 				</section>
 
 				<section>
 					<h2 style="text-align: left">
-						<span class="fragment" style="color: black"><font color="black">Presentación de la norma </font></span>
+						<span class="fragment" style="color: black"><font color="black">Desmitificación de la Preservación Digital:</font></span>
 					</h2>
 
 					<h2>
-						<span class="fragment" style="color: black"><font color="black"> NTC/ISO-16363: <br> AUDITORÍA Y CERTIFICACIÓN <br> DE REPOSITORIOS DIGITALES FIABLES. </font>  </span>
+						<em><span class="fragment" style="font-size: 1em; color:#4169E1; font-weight: bold;">Enfoque para archivistas.</span></em>
 					</h2>
 
-				</section>
-	
-<!--
-				<section data-background-color="rgba( 50, 200, 90, 0.4 )">
-					<h1 style="font-weight: bold;">One last bit</h1>
-					<p>
-					<br></p>
-					<div class="fragment">
-						<p style="text-align: left; font-weight: bold; margin-bottom: 10px;">that the reverse process of currying</p>
-						<h2 style="text-align: left; font-weight: bold;">uncurrying</h2>
-					</div>
-					<div class="fragment">
-						<p style="text-align: right; font-weight: bold;">is closely related with</p>
-						<p style="text-align: right; font-weight: bold;">a more familiar concept</p>
-					</div>
-					<div class="fragment">
-						<div style="text-align: left; background-color: rgb(17, 17, 17); width: 400%; height: 400%; position: absolute; top: -150%; left: -150%; opacity: 0.8;">
-						</div>
-						<h2 style="font-weight: bold; position: absolute; top: 95%; right: 0px;">
-						<font color="#af0">apply.</font>
-						</h2>
-					</div>
-				</section>
--->
+				</section>	
 
 				<section>
 					<h2>CONTENIDO</h2>
 					<section>
 						<ul>
-							<li>El patrimonio y la preservación digital</li>
+							<li>Definiciones iniciales</li>
+							<br>							
+							<li>Patrimonio y la preservación</li>
+							<br>
+							<li>Objetos digitales</li>							
+							<br>
+							<li>Web Services</li>							
+							<br>
 							<li>Recuento de estrategias para la preservación</li>
-							<!-- <li>Interés en la preservación digital</li> -->
-							<li>Resumen ejecutivo del modelo OAIS</li>
-							<li>Norma NTC-16363 - Trusted Repositories Audit and Certification (TRAC)</li>
+							<br>
+							<li>El modelo de referencia OAIS</li>
+							<br>
 							<li>Conclusiones</li>
 						</ul>
 						<aside class="notes">
-							- Es posible que alguna parte del contenido haya sido abordado en presentaciones más tempranas pero
-							  en esta presentación resulta primordial para los fines del entendimiento de la necesidad de la auditoría
-							  y certificación de los repositorios digitales fiables.
-							- Para poder hablar de certificación y auditoría de repositorios digitales, debemos conocer ¿Qué
-							  es lo que vamos a certificar y auditar, también debemos saber porqué es necesario auditarlos y
-							  certificar los repos y cómo se hacen esas actividades de auditoría y certificación. Por esto, 
-							  vamos a desarrollar la agenda en las siguientes seis etapas.
-							- Entregaré en este espacio, una información de contexto que servirá para los fines 
-							  que persigue el contenido de norma y haré referencia a la importancia que reviste la 
-							  preservación digital desde el análisis de los tiempos de vida útil de de algunos 
-							  medios o soportes, no todos, para el material digital; que dan cuenta de la urgencia 
-							  en la atención a los asuntos de la preservación digital. 
-							- En otro punto, hablaré brevemente sobre algunos hechos, que deben ser entendidos 
-							  como advertencia sobre la importancia que reviste la correcta elección, auditoría y 
-							  certificación de los repositorios digitales.
-							- Continuando con la presentación, mostraré la relevancia que reviste para las diferentes
-							  culturas este tema desde lo que se puede ver en el comportamiento de las búsquedas de
-							  algunos términos en uno de los buscadores más conocidos por todos. Esto nos dará una
-							  perspectiva sobre si este tema es de relevancia o no para las organizaciones y para el
-							  país.
-							- Como antesala al tema fundamental de la norma, haré un resumen ejecutivo sobre lo que
-							  el OAIS desde lo conceptual para allí entrar a determinar en donde se ubica la norma
-							  y qué función tiene dentro mencionado modelo.
-							- Para finalizar, hablaré a grandes rasgos de los ejes temáticos que se tocan en la 
-							  norma NTC-16363 sobre certificación y auditoría de los repositorios fiables. 
-							- Debo comentar que en algunos momentos de la presentación será válida la participación del
-							  público que nos acompaña y sobre las respuestas diré que todas serán correctas.
+							- NOTAS
 						</aside>
 					</section>
 				</section>
 
-				<!--   desarrollo primera sección o título  -->
-				<!-- <section id="Portada"  data-background-color="#FFFFFF" data-background-size="400px 400px" opacity: 0.1 data-background-image="logos/icontec-internacional.png" data-transition="concave" data-background-transition="zoom"> -->
-					<!-- <h2><font color="Yellow"><mark>LINEA DE TIEMPO DEL PROYECTO<mark></font></h2> -->
-				<!-- 	<p>
-							These instructions are also an example presentation using Reveal-dsd.js.  It's not very long, because there is already 
-							a nice example presentation at the <a href="http://lab.hakim.se/reveal-js/#/">reveal.js</a> web page.
-						<p>			
-				</section> -->
-
 <!--   desarrollo primera sección o título  -->
 				<section>
+					<h1>Definiciones</h1>
 					<section>
+						<h2>MITO</h2>
 						<blockquote style="font-size: 1.5em; color:#000000; background-color: rgba(206, 209, 206, 0.9); font-weight: bold; display: inline-block;">	
-							El patrimonio es el legado que recibimos del pasado, que vivimos en el presente y que transmitiremos a las generaciones futuras.
+							Narración maravillosa situada fuera del tiempo histórico y protagonizada por personajes de carácter divino o heroico.
 						</blockquote>
-						<p><font color="black"> Fuente: UNESCO </font></p>
+						<p><font color="black">Fuente: <p><font color="black"> Fuente: <a href="https://dle.rae.es/mito" target="_blank">Real Academia Española</a></font></p> </font></p>
 						<aside class="notes">
 							- 
 						</aside>						
 					</section>
+
+					<section>
+						<h2>PRESERVACIÓN DIGITAL ¡No oficial! </h2>
+						<blockquote style="font-size: 1.5em; color:#000000; background-color: rgba(206, 209, 206, 0.9); font-weight: bold; display: inline-block;">	
+							Narración maravillosa protagonizada por personajes de carácter divino o heroico llamados .... "ingenieros de sistemas o informáticos".
+						</blockquote>
+						<p><font color="black">Adaptación respetuosa realizada por: Ing. Christian Pérez Ruiz</font></p>
+						<aside class="notes">
+							- 
+						</aside>						
+					</section>
+
+					<section>						
+						<!-- <h3>CONSERVACIÓN vs PRESERVACIÓN</h3> -->
+						<blockquote style="font-size: 1em; color:#000000; background-color: rgba(206, 209, 206, 0.9); font-weight: bold; display: inline-block;">	
+							CONSERVACIÓN: Se refiere a la práctica que pretende prolongar la vida últil de un objeto mediante la intervención física.
+						</blockquote>
+						<blockquote style="font-size: 1em; color:#000000; background-color: rgba(206, 209, 206, 0.9); font-weight: bold; display: inline-block;">	
+							PRESERVACIÓN: Incluye todas las consideraciones administrativas, financieras y técnicas además de los métodos
+							involucrados en la preservación de información.
+						</blockquote>						
+						<p><font color="black">Fuente: Iyishu Victoria, <i>PRESERVATION AND CONSERVATION OF LIBRARY MATERIALS IN THE DIGITAL AGE</i></font></p>
+						<aside class="notes">
+							- 
+						</aside>						
+					</section>					
+
+
+					<section>
+						<h2>DIGITALIZAR</h2>
+						<blockquote style="font-size: 1.5em; color:#000000; background-color: rgba(206, 209, 206, 0.9); font-weight: bold; display: inline-block;">	
+							Convertir o codificar en números dígitos datos o informaciones de carácter continuo, como una imagen fotográfica, un documento o un libro.
+						</blockquote>
+						<p><font color="black">Fuente: Real Academia Española</font></p>
+						<aside class="notes">
+							- 
+						</aside>						
+					</section>
+
+					<section>
+						<h2>DIGITALIZAR PARA PRESERVAR</h2>
+						<blockquote style="font-size: 1em; color:#000000; background-color: rgba(206, 209, 206, 0.9); font-weight: bold; display: inline-block;">	
+							Actividades cuyo resultado es la creación de objetos digitales dignos de ser preservados a largo plazo y que incluyen la selección, 
+							captura, descripción y conformación para su publicación.
+						</blockquote>
+						<p><font color="black">Fuente: Paul Conway, <i>"Preservation in the Age of Google"</i></font></p>
+						<aside class="notes">
+							- 
+						</aside>						
+					</section>
+
+
+					<section>						
+						<h2>PRESERVACIÓN DIGITAL</h2>
+						<blockquote style="font-size: 1em; color:#000000; background-color: rgba(206, 209, 206, 0.9); font-weight: bold; display: inline-block;">	
+							Es el conjunto de principios, políticas, estrategias y acciones específicas que tienen como fin asegurar la estabilidad física y tecnológica 
+							de los datos, la permanencia y el acceso de la información de los documentos digitales y proteger el contenido intelectual de los mismos 
+							por el tiempo que se considere necesario.
+						</blockquote>
+						<p><font color="black">Fuente: Colombia, Archivo General de la Nación, Acuerdo 006 DE 2014</font></p>
+						<aside class="notes">
+							- 
+						</aside>						
+					</section>
+
+					
+				</section>
+
+<!--   desarrollo siguiente sección o título  -->
+				<section>
+					<h1>Preservación y Patrimonio</h1>
+					<section>
+						<blockquote style="font-size: 1.5em; color:#000000; background-color: rgba(206, 209, 206, 0.9); font-weight: bold; display: inline-block;">	
+							El patrimonio es el legado que recibimos del pasado, que vivimos en el presente y que transmitiremos a las generaciones futuras.
+						</blockquote>
+						<p><font color="black"> Fuente: <a href="http://www.unescoetxea.org/dokumentuak/UNESCOPatrimonio.pdf">UNESCO</a> </font></p>
+						<aside class="notes">
+							- 
+						</aside>						
+					</section>
+
 					<section>
 						<blockquote style="font-size: 1.5em; color:#000000; background-color: rgba(206, 209, 206, 0.9); font-weight: bold; display: inline-block;">	
 							Patrimonio cultural: se trata de aquellos lugares y objetos tangibles
-							e intangibles que poseen valor cultural, histórico, estético, arqueológico, científico, etnológico
-							o antropológico para determinados grupos o individuos.
+							e intangibles que poseen valor cultural, histórico, estético, arqueológico, científico, 
+							etnológico o antropológico para determinados grupos o individuos.
 						</blockquote>
-						<p><font color="black"> Fuente: UNESCO </font></p>
+						<p><font color="black"> Fuente: <a href="https://es.unesco.org/themes/information-preservation/digital-heritage/concept-digital-heritage" target="_blank">UNESCO</a> </font></p>
 						<aside class="notes">
 							- 
 						</aside>							
@@ -235,7 +245,7 @@
 							La preservación digital debe ofrecer que la «representación» de los objetos digitales
 							corresponde en todo momento al del objeto original, cada vez que se solicite posteriormente.
 						</blockquote>
-						<p><font color="black"> Fuente: UNESCO </font></p>
+						<p><font color="black"> Fuente: <a href="https://es.unesco.org/themes/information-preservation/digital-heritage/concept-digital-preservation" target="_blank">UNESCO</a></font></p>
 						<aside class="notes">
 							- Dentro de los elementos del patrimonio cultural surge un nuevo elemento, el patrimonio digital. 
 							- El término sociedad de la información en japón por parte de Yoneji Masuda y mas adelante por Manuel Castells.
@@ -245,26 +255,23 @@
 						</aside>
 					</section>						
 
-
 					<section>
 						<blockquote style="font-size: 1.5em; color:#000000; background-color: rgba(206, 209, 206, 0.9); font-weight: bold; display: inline-block;">	
 							La preservación digital puede definirse como el conjunto de los procesos destinados a
-							garantizar la continuidad de los elementos del patrimonio digital durante todo el tiempo que
-							se consideren necesarios.
+							garantizar la continuidad de los elementos del patrimonio digital durante todo el tiempo 
+							que se consideren necesarios.
 						</blockquote>
-						<p><font color="black"> Fuente: UNESCO </font></p>
+						<p><font color="black"> Fuente: <a href="https://es.unesco.org/themes/information-preservation/digital-heritage/concept-digital-preservation" target="_blank">UNESCO</a></font></p>
 						<aside class="notes">
 							- 
 						</aside>						
-					</section>
-
-			
+					</section>			
 
 					<section>
 						<blockquote style="font-size: 1.5em; color:#000000; background-color: rgba(206, 209, 206, 0.9); font-weight: bold; display: inline-block;">	
 							La mayor amenaza para la continuidad digital es la desaparición de los medios de acceso.
 						</blockquote>
-						<p><font color="black"> Fuente: UNESCO </font></p>
+						<p><font color="black"> Fuente: <a href="https://es.unesco.org/themes/information-preservation/digital-heritage/concept-digital-preservation" target="_blank">UNESCO</a></font></p>
 						<aside class="notes">
 							- Es sobre esta definición, que la UNESCO ha decidido actuar y para ello ha identificado que los procesos de
 							  preservación digital son los que deben dar continuidad a los elementos del patrimonio.
@@ -272,9 +279,101 @@
 					</section>	
 				</section>
 
+<!-- -                   -->
+<!--   desarrollo siguiente sección o título  -->
+				<section>
+					<h2>Objetos Digitales y WebServices</h2>
+					<section id="objetos digitales 1">
+						<blockquote style="font-size: 1.5em; color:#000000; background-color: rgba(206, 209, 206, 0.9); font-weight: bold; display: inline-block;">	
+							Son abstracciones que se pueden referir a cualquier tipo de información. El objeto puede ser simple o complejo,
+							y puede fluctuar entre valores almacenados en una base de datos hasta gráficas y sonidos.
+						</blockquote>
+						<p><font color="black"> Fuente: <a href="https://www2.archivists.org/glossary/terms/d/digital-object" target="_blank">Sociedad de Archivistas Estadounidense (SAA)</a></font></p>
+						<aside class="notes">
+							-
+						</aside>
+					</section>
+
+					<section id="objetos digitales 2">
+						<blockquote style="font-size: 1.5em; color:#000000; background-color: rgba(206, 209, 206, 0.9); font-weight: bold; display: inline-block;">	
+							PDF, PDF/A, DOC, XLS, XML.
+							Metadatos e integridad.
+						</blockquote>
+						<p><font color="black"> Fuente: <a href="https://www2.archivists.org/glossary/terms/d/digital-object" target="_blank">Sociedad de Archivistas Estadounidense (SAA)</a></font></p>
+						<aside class="notes">
+							-
+						</aside>
+					</section>
+
+
+					<section id="objetos digitales 2">
+						<blockquote style="font-size: 1.5em; color:#000000; background-color: rgba(206, 209, 206, 0.9); font-weight: bold; display: inline-block;">	
+							PDF, PDF/A, DOC, XLS, XML.
+							Metadatos e integridad.
+						</blockquote>
+						<p><font color="black"> Fuente: <a href="https://www2.archivists.org/glossary/terms/d/digital-object" target="_blank">Sociedad de Archivistas Estadounidense (SAA)</a></font></p>
+						<aside class="notes">
+							-
+						</aside>
+					</section>
+
+
+
+				</section>
+
+<!--   desarrollo siguiente sección o título  -->
+				<section>
+					<h2>WebServices</h2>
+					<section id="objetos digitales 1">
+						<blockquote style="font-size: 1.5em; color:#000000; background-color: rgba(206, 209, 206, 0.9); font-weight: bold; display: inline-block;">	
+							Son abstracciones que se pueden referir a cualquier tipo de información. El objeto puede ser simple o complejo,
+							y puede fluctuar entre valores almacenados en una base de datos hasta gráficas y sonidos.
+						</blockquote>
+						<p><font color="black"> Fuente: <a href="https://www2.archivists.org/glossary/terms/d/digital-object" target="_blank">Sociedad de Archivistas Estadounidense (SAA)</a></font></p>
+						<aside class="notes">
+							-
+						</aside>
+					</section>
+
+					<section id="objetos digitales 2">
+						<blockquote style="font-size: 1.5em; color:#000000; background-color: rgba(206, 209, 206, 0.9); font-weight: bold; display: inline-block;">	
+							PDF, PDF/A, DOC, XLS, XML.
+							Metadatos e integridad.
+						</blockquote>
+						<p><font color="black"> Fuente: <a href="https://www2.archivists.org/glossary/terms/d/digital-object" target="_blank">Sociedad de Archivistas Estadounidense (SAA)</a></font></p>
+						<aside class="notes">
+							-
+						</aside>
+					</section>
+
+				</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--   desarrollo siguiente sección o título  -->
 				<section>
 					<h2>Estrategias preservación digital</h2>
-
 					<!-- 
 					<section>
 							<ul>
@@ -342,7 +441,8 @@
 							- Analizaremos primero la opción de los soportes ópticos, después los magnéticos y terminamos con los discos duros.
 						</aside>						
 					</section>
-	
+
+					
 
 					<section id="discosduros">
 					<div class="fragment roll-in">
@@ -385,11 +485,10 @@
 							del almacenamiento en la nube.						
 						</aside>							
 					</section>
-
 				</section>
 
 
-<!--   desarrollo segunda sección o título  -->
+<!--   desarrollo siguiente sección o título  -->
 
 
 				<section id="amenaza" data-background-color="#FFFFFF">
@@ -958,7 +1057,8 @@
 					// { src: 'plugin/elapsed-time-bar/elapsed-time-bar.js'},
 					{ src: 'plugin/d3js/d3.v5.min.js' },
 					{ src: 'plugin/customcontrols/customcontrols.js' },
-                    { src: 'plugin/d3js/d3js.js' },
+					{ src: 'plugin/d3js/d3js.js' },
+					{ src: 'plugin/quiz/js/quiz.js', async: true, callback: function() { prepareQuizzes({}); } },
 					// { src: 'plugin/d3js/reveald3.js' },
 					{ src: 'plugin/reveal-ga/reveal-ga.min.js' },  // UA-81169312-1
 					{ src: 'plugin/fragment/reveal-svg-fragment.js', condition: function() { return !!document.querySelector( '[data-svg-fragment]' ); } }
@@ -970,7 +1070,8 @@
 		<!-- Everything below this point is unrelated to the slideshow -->
 		<!-- <div style="position:absolute; top:10px; right:10px; border:0;"><a href="http://https://www.archivogeneral.gov.co/"><img src="logos/archivo-general.png" width="160"></a></div> -->
 
-		<!-- <div style="position:absolute; top:10px; left:10px; border:0;"><a href="http://https://www.archivogeneral.gov.co/"><img src="logos/archivo-general.png" width="160"></a></div> -->
+		<div style="position:absolute; top:10px; left:10px; border:0;"><a href="http://www.scarchivistas.co/"><img src="logos/sca-03.png" width="160"></a></div>
+		<!-- <div style="position:absolute; top:10px; left:10px; border:0;"><a href="http://www.archivogeneral.gov.co/"><img src="logos/archivo-general.png" width="160"></a></div> -->
 		<!-- <div style="position:absolute; bottom:10px; left:10px; border:0;"><a href="http://www.icontec.org/"><img src="logos/icontec-internacional.png" width="100"></a></div> -->
 		<!-- <div style="position:absolute; top:0px; right:10px; border:0;"><a href="http://www.mincultura.gov.co/"><img src="logos/franja02.png" width="173"></a></div> -->
 		<!-- <div style="position:absolute; bottom:100px; right:103px; border:0;"><a href="http://www.mincultura.gov.co/"><img src="logos/mincultura.png" width="200"></a></div> -->
