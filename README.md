@@ -1,4 +1,4 @@
-# DESMITIFICACION DE LA PRESERVACIÓN DIGITAL PARA ARCHIVISTAS !
+# MITOS Y REALIDADES DE LA PRESERVACIÓN DIGITAL PARA ARCHIVISTAS !
 
 Presentación que intenta ofrecer un acercamiento general a lo relacionado con la preservación digital.
 
